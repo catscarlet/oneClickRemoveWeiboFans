@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name                oneClickRemoveWeiboFans
-// @name:zh-CN          oneClickRemoveWeiboFans 一键删除粉丝
+// @name:zh-CN          oneClickRemoveWeiboFans 一键删除微博粉丝
 // @namespace           undefined
-// @version             0.0.1
+// @version             0.0.3
 // @description         Add a button to remove your shit followers.
 // @description:zh-CN   在粉丝页面添加一个[一键删除]按钮
 // @author              catscarlet
@@ -98,7 +98,6 @@
     }
 
     function removeFanDirectly() {
-        //console.log(this);
         var thisBtn = $(this);
         thisBtn.off('click');
         thisBtn.text('正在移除');
@@ -107,7 +106,6 @@
         var uid = $(this).attr('fanuid');
         var fnick = $(this).attr('fanfnick');
         var data = 'uid=' + uid;
-        //console.log(data);
 
         var thisli = $(this).parent().parent().parent();
 
@@ -118,10 +116,7 @@
             dataType: 'json',
             async: true,
             success: function(msg) {
-                //console.log(this);
-                //console.log(msg);
                 var code = msg.code;
-
                 if (code == 100000) {
                     console.log('移除粉丝：' + fnick);
                     thisli.remove();
@@ -136,5 +131,4 @@
             }
         });
     }
-
 })();
