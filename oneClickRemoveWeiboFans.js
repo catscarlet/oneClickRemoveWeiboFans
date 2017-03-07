@@ -1,17 +1,25 @@
 // ==UserScript==
 // @name                oneClickRemoveWeiboFans
 // @name:zh-CN          oneClickRemoveWeiboFans 一键删除微博粉丝
-// @namespace           undefined
-// @version             0.0.3
-// @description         Add a button to remove your shit followers.
-// @description:zh-CN   在粉丝页面添加一个[一键删除]按钮
+// @name:zh-HK          oneClickRemoveWeiboFans 一键删除微博粉絲
+// @name:zh-TW          oneClickRemoveWeiboFans 一键删除微博粉絲
+// @name:en             oneClickRemoveWeiboFans
+// @name:ja             oneClickRemoveWeiboFans 一键删除微博粉絲
+// @namespace           https://github.com/catscarlet/oneClickRemoveWeiboFans
+// @description         在粉丝页面添加一个[一键删除]按钮，点击直接删除粉丝，<确认/取消> 不再有
+// @description:zh-CN   在粉丝页面添加一个[一键删除]按钮，点击直接删除粉丝，<确认/取消> 不再有
+// @description:zh-HK   在粉絲頁面添加一個[一键删除]按鈕，點擊直接刪除粉絲，<確認/取消> 不再有
+// @description:zh-TW   在粉絲頁面添加一個[一键删除]按鈕，點擊直接刪除粉絲，<確認/取消> 不再有
+// @description:en      Add a [一键删除] button to the Followers Page. Directly delete the annoying fans by one click. No <确认/取消> any more.
+// @description:ja      在フォロワーページに[X]ボタンを追加します。 ワンクリックで、迷惑なフォロワーを直接削除します。これ以上の<Y / N>はありません。
+// @version             0.0.4
 // @author              catscarlet
 // @match               http://weibo.com/*/fans*
 // @match               http://weibo.com/p/*/myfollow?*relate=fans*
 // @require             https://code.jquery.com/jquery-latest.js
+// @compatible          chrome  支持
 // @run-at              document-end
-// @grant               unsafeWindow
-// @grant               GM_setClipboard
+// @grant               none
 // ==/UserScript==
 
 (function() {
@@ -40,7 +48,6 @@
         function f() {
             console.log('oneClickRemoveWeiboFans pending');
             if (!document.getElementsByClassName('follow_list').length) {
-
                 setTimeout(f, 1000);
             } else {
                 getFans();
@@ -60,11 +67,12 @@
         } else {
             $('.follow_box').attr('oneClickRemoveWeiboFansFlag', '1');
         }
+
         console.log('oneClickRemoveWeiboFans get fans');
         var follow_list = $('.follow_list');
+
         $(follow_list).find('li').each(function() {
             var follow = $(this);
-
             if (follow.hasClass('follow_item S_line2')) {
                 var opt_box = follow.find('.opt_box');
                 var info = opt_box.find('a.W_btn_b');
@@ -106,7 +114,6 @@
         var uid = $(this).attr('fanuid');
         var fnick = $(this).attr('fanfnick');
         var data = 'uid=' + uid;
-
         var thisli = $(this).parent().parent().parent();
 
         $.ajax({
