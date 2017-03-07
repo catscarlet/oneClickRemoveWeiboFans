@@ -1,6 +1,4 @@
-# oneClickRemoveWeiboFans
-
-一键删除微博粉丝 oneClickRemoveWeiboFans
+# oneClickRemoveWeiboFans 一键删除微博粉丝
 
 基本功能就是，在粉丝列表页，增加了一个 **[一键移除]** 按钮，点一下这个按钮，就立即移除这个粉丝，没有提示框，没有确认，秒杀，一刀切，不含糊。非常适用于对垃圾粉营销粉僵尸粉开刀，免除 **新浪人为设置的多次瞄准和点击才能删除粉丝的麻烦**。
 
@@ -10,9 +8,9 @@ _关注一个粉丝只需点击一下，删除一个粉丝则需要：瞄准按�
 
 ## 安装
 
-脚本地址：<https://greasyfork.org/zh-CN/scripts/27750-oneclickremoveweibofans>，点击页面上的 **安装此脚本** 即可。
+脚本安装地址：<https://greasyfork.org/zh-CN/scripts/27750-oneclickremoveweibofans>，点击页面上的 **安装此脚本** 即可。
 
-Chrome用户需要安装 **<暴力猴 扩展程序>**：[谷歌商店](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag?hl=zh-CN)，[GitHub](https://github.com/violentmonkey/violentmonkey/releases/latest)。
+Chrome用户需要安装 **<暴力猴 扩展程序>**：[谷歌商店链接](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag?hl=zh-CN)，[GitHub链接](https://github.com/violentmonkey/violentmonkey/releases/latest)。
 
 其他浏览器未经过测试，请尝试 GreaseMonkey 或同类扩展。
 
@@ -49,6 +47,8 @@ Chrome用户需要安装 **<暴力猴 扩展程序>**：[谷歌商店](https://c
 ### 本地存储
 
 脚本不会存储您的任何操作记录。如果您把某个粉丝删掉了，那就删掉了，不会记录是谁被删掉了，什么时候被删掉了。
+
+打开浏览器控制台，可以看到被删掉的粉丝名称，可用于调试和检查。
 
 ## 代码
 
