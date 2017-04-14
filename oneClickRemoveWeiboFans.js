@@ -6,11 +6,11 @@
 // @name:en             oneClickRemoveWeiboFans
 // @name:ja             oneClickRemoveWeiboFans 一键删除微博粉絲
 // @namespace           https://github.com/catscarlet/oneClickRemoveWeiboFans
-// @description         在粉丝页面添加一个[一键删除]按钮，点击直接删除粉丝，<确认/取消> 不再有
-// @description:zh-CN   在粉丝页面添加一个[一键删除]按钮，点击直接删除粉丝，<确认/取消> 不再有
-// @description:zh-HK   在粉絲頁面添加一個[一键删除]按鈕，點擊直接刪除粉絲，<確認/取消> 不再有
-// @description:zh-TW   在粉絲頁面添加一個[一键删除]按鈕，點擊直接刪除粉絲，<確認/取消> 不再有
-// @description:en      Add a [一键删除] button to the Followers Page. Directly delete the annoying fans by one click. No <确认/取消> any more.
+// @description         在新浪微博(weibo.com)的粉丝页面添加一个[一键删除]按钮，点击直接删除粉丝，<确认/取消> 不再有
+// @description:zh-CN   在新浪微博(weibo.com)的粉丝页面添加一个[一键删除]按钮，点击直接删除粉丝，<确认/取消> 不再有
+// @description:zh-HK   在新浪微博(weibo.com)的粉絲頁面添加一個[一键删除]按鈕，點擊直接刪除粉絲，<確認/取消> 不再有
+// @description:zh-TW   在新浪微博(weibo.com)的粉絲頁面添加一個[一键删除]按鈕，點擊直接刪除粉絲，<確認/取消> 不再有
+// @description:en      Add a [一键删除] button to the Followers Page on Sina Weibo (weibo.com). Directly delete the annoying fans by one click. No <确认/取消> any more.
 // @description:ja      在フォロワーページに[X]ボタンを追加します。 ワンクリックで、迷惑なフォロワーを直接削除します。これ以上の<Y / N>はありません。
 // @version             0.0.4
 // @author              catscarlet
